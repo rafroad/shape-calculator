@@ -13,9 +13,10 @@ namespace shape_calculator
         {
             var shape_list = new List<string>
             { 
-        "circle",
-        "square",
-        //"debug"
+              "circle",
+              "square",
+              //"debug",
+              "exit"
             };
             string main_list = string.Join(Environment.NewLine, shape_list.ToArray());
             return main_list;
@@ -24,8 +25,9 @@ namespace shape_calculator
         {
             var cl = new List<string>
             {
-        "circumference",
-        "area"
+               "circumference",
+               "area",
+               "return"
             };
             string circle_list = string.Join(Environment.NewLine, cl.ToArray());
             return circle_list;
@@ -35,7 +37,8 @@ namespace shape_calculator
             var sl = new List<string>
             {
                 "area",
-                "perimeter"
+                "perimeter",
+                "return"
             };
             string square_list=string.Join(Environment.NewLine, sl.ToArray());
             return square_list;

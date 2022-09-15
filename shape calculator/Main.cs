@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using shape_calculator;
 
 
@@ -37,6 +38,10 @@ namespace shape_calculator
                             float ccc = c.circle_circum(circle_input_circum);
                             Console.WriteLine("result: " + ccc);
                             break;
+                        case "return":
+                            Console.Clear();
+                            main_prg();
+                            break;
                     }
                     break;
                 case "square":
@@ -57,6 +62,10 @@ namespace shape_calculator
                             float sqr_pr_fnl = c.sqr_area(sqr_pr);
                             Console.WriteLine("result: " + sqr_pr_fnl);
                             break;
+                        case "return":
+                            Console.Clear();
+                            main_prg();
+                            break;
                     }
                     break;
                 case "debug":
@@ -64,7 +73,11 @@ namespace shape_calculator
                     break;
                 default:
                     Console.Clear();
+                    I.incorrect_input();
                     main_prg();
+                    break;
+                case "exit":
+                    Environment.Exit(0);
                     break;
             }
         }

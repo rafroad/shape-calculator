@@ -60,5 +60,9 @@ namespace shape_calculator
             Console.WriteLine(Environment.NewLine);
             Console.WriteLine("square perimeter: " + c.sqr_pr(test_value));
         }
+        public void incorrect_input()
+        {
+            Console.WriteLine("INCORRECT INPUT PLEASE REINPUT");
+        }
     }
 }
