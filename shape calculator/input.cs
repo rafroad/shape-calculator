@@ -26,7 +26,7 @@ namespace shape_calculator
         {
             Console.Clear();
             Console.WriteLine("pick type");
-            Console.WriteLine(L.circle_list());
+            Console.WriteLine(L.input_s_L());
             Console.Write(":");
             string cd = Console.ReadLine();
             return cd;
@@ -35,7 +35,7 @@ namespace shape_calculator
         {
             Console.Clear();
             Console.WriteLine("pick type");
-            Console.WriteLine(L.sqr_list());
+            Console.WriteLine(L.input_s_L());
             Console.Write(":");
             string sd = Console.ReadLine();
             return sd;
@@ -46,9 +46,7 @@ namespace shape_calculator
             float test_value = 13;
             Console.WriteLine("shape list: " + Environment.NewLine + L.shape_list());
             Console.WriteLine(Environment.NewLine);
-            Console.WriteLine("square list: " + Environment.NewLine + L.sqr_list());
-            Console.WriteLine(Environment.NewLine);
-            Console.WriteLine("circle list: " + Environment.NewLine + L.circle_list());
+            Console.WriteLine("square list: " + Environment.NewLine + L.input_s_L());
             Console.WriteLine(Environment.NewLine);
             Console.WriteLine("test value: " + test_value);
             Console.WriteLine(Environment.NewLine);

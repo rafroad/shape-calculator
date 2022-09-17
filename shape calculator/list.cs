@@ -21,28 +21,18 @@ namespace shape_calculator
             string main_list = string.Join(Environment.NewLine, shape_list.ToArray());
             return main_list;
         }
-        public string circle_list()
+        public string input_s_L()
         {
             var cl = new List<string>
             {
-               "circumference",
+               "perimeter",
                "area",
                "return"
             };
             string circle_list = string.Join(Environment.NewLine, cl.ToArray());
             return circle_list;
         }
-        public string sqr_list()
-        {
-            var sl = new List<string>
-            {
-                "area",
-                "perimeter",
-                "return"
-            };
-            string square_list=string.Join(Environment.NewLine, sl.ToArray());
-            return square_list;
-        }
+
         public string main_list()
         {
             var ml = new List<string>
